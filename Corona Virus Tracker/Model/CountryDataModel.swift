@@ -15,6 +15,8 @@ struct CountryDataModel: Codable
     var country: String? //Country Name
     var countryInfo:  countryInfo
     var cases: Int?
+    var todayCases: Int?
+    var todayDeaths: Int?
     var totalCases: Int?
     var deaths: Int?
     var totalDeaths: Int?

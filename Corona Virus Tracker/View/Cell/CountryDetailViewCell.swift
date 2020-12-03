@@ -1,5 +1,5 @@
 //
-//  CountryDataViewCell.swift
+//  CountryDetailViewCell.swift
 //  Corona Virus Tracker
 //
 //  Created by Adwait Barkale on 03/12/20.
@@ -8,15 +8,12 @@
 
 import UIKit
 
-class CountryDataViewCell: UITableViewCell {
-    
-    @IBOutlet weak var imgCountryFlag: UIImageView!
-    @IBOutlet weak var lblCountryName: UILabel!
-    @IBOutlet weak var btnCell: UIButton!
-    
-    
-    
+class CountryDetailViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblLeftTitle: UILabel!
+    @IBOutlet weak var lblRightValue: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
