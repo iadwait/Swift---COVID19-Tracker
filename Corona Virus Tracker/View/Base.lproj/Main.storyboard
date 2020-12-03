@@ -203,7 +203,7 @@
                                             <constraint firstAttribute="width" constant="30" id="k7Z-91-4fe"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="backi"/>
+                                        <state key="normal" image="back"/>
                                         <connections>
                                             <action selector="btnBackTapped:" destination="VKc-Ep-pO3" eventType="touchUpInside" id="3GW-bu-MHk"/>
                                         </connections>
@@ -220,13 +220,21 @@
                                     <constraint firstItem="5gA-bG-IBQ" firstAttribute="leading" secondItem="aWb-CW-tYT" secondAttribute="trailing" constant="20" id="rqB-Tn-ixH"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPx-fm-rjg">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPx-fm-rjg" customClass="DesignableTextfield" customModule="Corona_Virus_Tracker" customModuleProvider="target">
                                 <rect key="frame" x="10" y="124" width="394" height="40"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="M58-d2-83I"/>
                                 </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="magnifyingglass" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2m8-PK-KCN">
                                 <rect key="frame" x="10" y="174" width="394" height="678"/>
@@ -314,6 +322,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backi" width="52" height="52"/>
+        <image name="back" width="48" height="48"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
 </document>

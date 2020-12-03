@@ -23,6 +23,8 @@ class TrackCountriesViewController: UIViewController {
         tableCountryData.delegate = self
         tableCountryData.dataSource = self
         tableCountryData.backgroundColor = .clear
+        txtSearch.attributedPlaceholder = NSAttributedString(string: "Search",
+                                                             attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
         
         CountryDataHelper().sendRequest(url: countryDataUrl) { (data, success) in
             
@@ -49,6 +51,14 @@ class TrackCountriesViewController: UIViewController {
             
         }
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.numberOfTapsRequired = 1
+        self.view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard()
+    {
+        self.view.endEditing(true)
     }
     
     @IBAction func btnBackTapped(_ sender: UIButton) {
@@ -94,3 +104,31 @@ extension TrackCountriesViewController: UITableViewDelegate,UITableViewDataSourc
     }
     
 }
+
+
+/*
+  func updateTableData(searchText:String)
+    {
+        print(searchedText)
+        //tempNewsData = emptyNewsData
+        tempNewsData.articles.removeAll()
+        //flagDataFetched = false
+        let articlesCount = objNewsData.articles.count
+        
+        if articlesCount > 0{
+            for search in 0..<articlesCount{
+                let data = objNewsData.articles[search].title
+                let range = data?.lowercased().range(of: searchText, options: .caseInsensitive, range: nil, locale: nil)
+                if range != nil{
+                    self.tempNewsData.articles.append(objNewsData.articles[search])
+                    flagDataFetched = true
+                }
+            }
+        }
+        if tempNewsData.articles.count == 0{
+            tempNewsData = objNewsData
+            flagDataFetched = true
+        }
+        newsTable.reloadData()
+    }
+ */

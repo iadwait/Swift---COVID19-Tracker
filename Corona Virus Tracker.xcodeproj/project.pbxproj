@@ -23,6 +23,7 @@
 		DEF5719E2578BCF000429B68 /* CountryDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF5719D2578BCF000429B68 /* CountryDataHelper.swift */; };
 		DEF571A02578C02F00429B68 /* CountryDataViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF5719F2578C02F00429B68 /* CountryDataViewCell.swift */; };
 		DEF571A32578C19900429B68 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF571A22578C19900429B68 /* UIImageView + Extension.swift */; };
+		DEF571A52578C71400429B68 /* DesignableTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF571A42578C71400429B68 /* DesignableTextfield.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		DEF5719D2578BCF000429B68 /* CountryDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataHelper.swift; sourceTree = "<group>"; };
 		DEF5719F2578C02F00429B68 /* CountryDataViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataViewCell.swift; sourceTree = "<group>"; };
 		DEF571A22578C19900429B68 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		DEF571A42578C71400429B68 /* DesignableTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextfield.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,6 @@
 				DEF5718B2578A53E00429B68 /* Controller */,
 				DEF571762578A36200429B68 /* AppDelegate.swift */,
 				DEF571782578A36200429B68 /* SceneDelegate.swift */,
-				DEF5717C2578A36200429B68 /* Main.storyboard */,
 				DEF5717F2578A36500429B68 /* Assets.xcassets */,
 				DEF571812578A36500429B68 /* LaunchScreen.storyboard */,
 				DEF571842578A36500429B68 /* Info.plist */,
@@ -113,6 +114,7 @@
 		DEF5718C2578A54300429B68 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DEF5717C2578A36200429B68 /* Main.storyboard */,
 				DEF571922578A98000429B68 /* Cell */,
 			);
 			path = View;
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				DEF571A22578C19900429B68 /* UIImageView + Extension.swift */,
+				DEF571A42578C71400429B68 /* DesignableTextfield.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				DEF571772578A36200429B68 /* AppDelegate.swift in Sources */,
 				DEF571912578A5FE00429B68 /* NetworkManager.swift in Sources */,
 				DEF571A32578C19900429B68 /* UIImageView + Extension.swift in Sources */,
+				DEF571A52578C71400429B68 /* DesignableTextfield.swift in Sources */,
 				DEF571982578B33700429B68 /* DataModel.swift in Sources */,
 				DEF571792578A36200429B68 /* SceneDelegate.swift in Sources */,
 				DEF5719E2578BCF000429B68 /* CountryDataHelper.swift in Sources */,
